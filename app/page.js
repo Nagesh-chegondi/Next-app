@@ -9,6 +9,7 @@ export default function Page() {
   const [clicked, setClicked] = useState(false);
   const [selectedImages, setSelectedImages] = useState([]);
   const fileInputRef = useRef(null)
+  const info = ["About me","Experiences","Recommended"]
   const handleFileChange = (event) => {
   const files = Array.from(event.target.files);
   const newImages = files.map((file) => URL.createObjectURL(file));
@@ -33,12 +34,12 @@ const handleButtonClick = () => {
   };
   
   return (
-    <div className=" bg-linear-to-r from-[#373E44] to-[#191B1F] h-[920px]  w-[1720px]">
-      <div className="absolute left-[976px] top-[805px]">
-        <img src="/bottom_line.png" alt="Bottom line" />
+    <div className=" relative bg-gradient-to-r from-[#373E44] to-[#191B1F] h-[920px]  w-[1720px]">
+      <div className=" w-[720px] rounded-[2.46px] flex justify-center items-center absolute left-[930px] top-[805px]">
+        <img className="w-[500px]" src="/bottom_line.png" alt="Bottom line" />
       </div>
-      <div className="absolute left-[976px] top-[433px]">
-        <img src="/between_line.png" alt="Between line" />
+      <div className=" w-[720px] h-[5px] flex  items-center absolute left-[976px] top-[433px]">
+        <img className="h-[4px] w-[612px]" src="/between_line.png" alt="Between line" />
       </div>
       <div className="z-10 absolute left-[1621px] top-[207px]">
         <img src="right_side.png" alt="Right side" />
@@ -52,37 +53,21 @@ const handleButtonClick = () => {
         <div className="shadow-[5.67px_5.67px_3.78px_0_rgba(0,0,0,0.4)] w-[720px] h-[316px] bg-[#363C43] rounded-[18.89px] absolute top-24 left-[922px]">
          <div className="flex justify-center items-center w-[614px] h-[62px] bg-[#171717] relative top-[23px] left-[59px] rounded-[23px] shadow-[inset_0_4.96px_12.4px_2.48px_rgba(0,0,0,0.25)]">
           <div
-            className="absolute top-[6.5px] left-2.5 w-[190px] h-[49px] bg-[#28292F] rounded-2xl shadow-[0_2px_4px_rgba(0,0,0,0.25),0_8px_16px_rgba(0,0,0,0.1)] transition-all duration-200 ease-in-out"
+            className="absolute top-[6.5px] left-2.5 w-[190px] h-[49px] bg-[#28292F] rounded-2xl shadow-[0_2px_4px_rgba(0,0,0,0.25),0_8px_16px_rgba(0,0,0,0.1)] transition-all duration-500 ease-in-out"
             style={{
               transform: `translateX(${active * 200}px)`,
             }}
           ></div>
           <div className="flex gap-1.5 h-[49px]">
+            {info.map((info,index)=>(
+              <button  key={index} onClick={() => {setActive(index);setClicked(index);}}
+              className="cursor-pointer relative overflow-hidden group px-6 py-2.5 w-[195px] h-[49px] flex justify-center items-center rounded-2xl text-[18px] font-medium">
+              <span className="relative z-10">{info}</span>
+              <span className= {`absolute top-0 -left-full w-full h-full bg-white/5 transition-transform duration-200 ease-in-out group-hover:translate-x-full ${clicked===index?"opacity-0":"group-hover:translate-x-full opacity-100 duration-500 ease-in-out"} `}></span>
+            </button>
+            ))}
 
-            <button
-              onClick={() => {
-                setActive(0);
-                setClicked(true);
-              }}
-              className="cursor-pointer relative overflow-hidden group px-6 py-2.5 w-[195px] h-[49px] flex justify-center items-center rounded-2xl text-[18px] font-medium"
-            >
-              <span className="relative z-10">About Me</span>
-              <span className={`absolute top-0 -left-full w-full h-full bg-white/5 transition-transform duration-200 ease-in-out group-hover:translate-x-full ${clicked ? "-left-full" : "opacity-100 hover:translate-x-full"}`}></span>
-            </button>
-            <button
-              onClick={() => setActive(1)}
-              className="cursor-pointer relative overflow-hidden group px-6 py-2.5 w-[195px] h-[49px] flex justify-center items-center rounded-2xl text-[18px] font-medium"
-            >
-              <span className="relative z-10">Experiences</span>
-              <span className="absolute top-0 -left-full w-full h-full bg-white/5 transition-transform duration-700 ease-in-out group-hover:translate-x-full"></span>
-            </button>
-            <button
-              onClick={() => setActive(2)}
-              className="cursor-pointer relative overflow-hidden group px-6 py-2.5 w-[195px] h-[49px] flex justify-center items-center rounded-2xl text-[18px] font-medium"
-            >
-              <span className="relative z-10">Recommended</span>
-              <span className="absolute top-0 -left-full w-full h-full bg-white/5 transition-transform duration-700 ease-in-out group-hover:translate-x-full"></span>
-            </button>
+            
             
           </div>
          </div>
