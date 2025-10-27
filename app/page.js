@@ -63,7 +63,7 @@ const handleButtonClick = () => {
               <button  key={index} onClick={() => {setActive(index);setClicked(index);}}
               className="cursor-pointer relative overflow-hidden group px-6 py-2.5 w-[195px] h-[49px] flex justify-center items-center rounded-2xl text-[18px] font-medium">
               <span className="relative z-10">{info}</span>
-              <span className= {`absolute top-0 -left-full w-full h-full bg-white/5 transition-transform duration-200 ease-in-out group-hover:translate-x-full ${clicked===index?"opacity-0":"group-hover:translate-x-full opacity-100 duration-500 ease-in-out"} `}></span>
+              <span className= {`absolute top-0 -left-full w-full h-full bg-white/5 transition-transform duration-200 ease-in-out group-hover:translate-x-full ${clicked===index?"opacity-0":"group-hover:translate-x-full opacity-100 duration-700 ease-in-out"} `}></span>
             </button>
             ))}
 
