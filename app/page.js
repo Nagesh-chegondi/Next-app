@@ -2,9 +2,9 @@
 import "./globals.css";
 import { useState } from "react";
 import { useRef } from "react";
-import Image from "./components/image";
+import Image from "./components/Image";
 
-export default function Home() {
+export default function Page() {
   const [active, setActive] = useState(0);
   const [clicked, setClicked] = useState(false);
   const [selectedImages, setSelectedImages] = useState([]);
