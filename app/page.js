@@ -35,7 +35,7 @@ const handleButtonClick = () => {
   
   return (
     <div className=" relative bg-gradient-to-r from-[#373E44] to-[#191B1F] h-[920px] md:max-w-[1280px]  bg-gradient-to-r from-[#373E44] to-[#191B1F] lg:max-w-[1280px]  bg-gradient-to-r from-[#373E44] to-[#191B1F] xl:max-w-[1530px] bg-gradient-to-r from-[#373E44] to-[#191B1F] 2xl:max-w-[1720px] bg-gradient-to-r from-[#373E44] to-[#191B1F]">
-        <div className=" relative shadow-[5.67px_5.67px_3.78px_0_rgba(0,0,0,0.4)] w-[720px] h-[316px] bg-[#363C43] rounded-[18.89px]  left-[922px] md:left-[50px] lg:left-[300px]  xl:left-[550px] top-[50px] 2xl:left-[822px]">
+        <div className=" relative shadow-[5.67px_5.67px_3.78px_0_rgba(0,0,0,0.4)] w-[720px] h-[316px] bg-[#363C43] rounded-[18.89px]  left-[922px] md:left-[50px] lg:left-[300px]  xl:left-[530px] top-[50px] 2xl:left-[822px]">
           <div className=" w-[720px] rounded-[2.46px] flex justify-center absolute left-[0px] bottom-[-30px] ">
         <img className="w-[500px]" src="/bottom_line.png" alt="Bottom line" />
       </div>
@@ -70,7 +70,7 @@ const handleButtonClick = () => {
             <p className="mt-2.5">I was born and raised in Albany, NY& have been living in Santa Carla for the past 10 years my wife Tiffany and my 4 year old twin daughters- Emma and Ella. Both of them are just starting school, so my calender is usually blocked between 9-10 AM. This is a...</p>
           </div>
         </div>
-        <div className="w-[720px] h-[330px] rounded-[18.89px] bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0_rgba(0,0,0,0.4)] relative top-[96px] left-[922px] overflow-visible md:left-[50px] lg:left-[300px] xl:left-[550px] 2xl:left-[822px]">
+        <div className="w-[720px] h-[330px] rounded-[18.89px] bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0_rgba(0,0,0,0.4)] relative top-[96px] left-[922px] overflow-visible md:left-[50px] lg:left-[300px] xl:left-[530px] 2xl:left-[822px]">
           <div className=" w-[720px] rounded-[2.46px] flex justify-center items-center absolute left-[0px] bottom-[-30px]">
         <img className="w-[500px]" src="/bottom_line.png" alt="Bottom line" />
       </div>
