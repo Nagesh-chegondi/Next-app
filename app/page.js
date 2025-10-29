@@ -34,24 +34,18 @@ const handleButtonClick = () => {
   };
   
   return (
-    <div className=" relative bg-gradient-to-r from-[#373E44] to-[#191B1F] h-[920px]  w-[1720px]">
-      <div className=" w-[720px] rounded-[2.46px] flex justify-center items-center absolute left-[930px] top-[805px]">
+    <div className=" relative bg-gradient-to-r from-[#373E44] to-[#191B1F] h-[920px] md:max-w-[1280px]  bg-gradient-to-r from-[#373E44] to-[#191B1F] lg:max-w-[1280px]  bg-gradient-to-r from-[#373E44] to-[#191B1F] xl:max-w-[1530px] bg-gradient-to-r from-[#373E44] to-[#191B1F] 2xl:max-w-[1720px] bg-gradient-to-r from-[#373E44] to-[#191B1F]">
+        <div className=" relative shadow-[5.67px_5.67px_3.78px_0_rgba(0,0,0,0.4)] w-[720px] h-[316px] bg-[#363C43] rounded-[18.89px]  left-[922px] md:left-[50px] lg:left-[300px]  xl:left-[550px] top-[50px] 2xl:left-[822px]">
+          <div className=" w-[720px] rounded-[2.46px] flex justify-center absolute left-[0px] bottom-[-30px] ">
         <img className="w-[500px]" src="/bottom_line.png" alt="Bottom line" />
       </div>
-      <div className=" w-[720px] h-[5px] flex  items-center absolute left-[976px] top-[433px]">
-        <img className="h-[4px] w-[612px]" src="/between_line.png" alt="Between line" />
-      </div>
-      <div className="z-10 absolute left-[1621px] top-[207px]">
+          <div className="z-10 absolute left-[700px] top-[150px]">
         <img src="right_side.png" alt="Right side" />
       </div>
-      <div className="z-10 w-6 absolute left-[934px] top-[473px]">
+      <div className="z-10 w-6 absolute left-[12px] top-[20px]">
         <img className="w-6 object-contain" src="/side_bar.png" alt="Side bar" />
       </div>
-      <div className="z-10 w-6 absolute left-[934px] top-[116px]">
-        <img className="w-6 object-contain" src="/side_bar.png" alt="Side bar" />
-      </div>
-        <div className="shadow-[5.67px_5.67px_3.78px_0_rgba(0,0,0,0.4)] w-[720px] h-[316px] bg-[#363C43] rounded-[18.89px] absolute top-24 left-[922px]">
-         <div className="flex justify-center items-center w-[614px] h-[62px] bg-[#171717] relative top-[23px] left-[59px] rounded-[23px] shadow-[inset_0_4.96px_12.4px_2.48px_rgba(0,0,0,0.25)]">
+         <div className="flex justify-center items-center w-[614px] h-[62px] bg-[#171717] relative top-[23px] left-[59px] rounded-[23px] shadow-[inset_0_4.96px_12.4px_2.48px_rgba(0,0,0,0.25)] ">
           <div
             className="absolute top-[6.5px] left-2.5 w-[190px] h-[49px] bg-[#28292F] rounded-2xl shadow-[0_2px_4px_rgba(0,0,0,0.25),0_8px_16px_rgba(0,0,0,0.1)] transition-all duration-500 ease-in-out"
             style={{
@@ -76,10 +70,13 @@ const handleButtonClick = () => {
             <p className="mt-2.5">I was born and raised in Albany, NY& have been living in Santa Carla for the past 10 years my wife Tiffany and my 4 year old twin daughters- Emma and Ella. Both of them are just starting school, so my calender is usually blocked between 9-10 AM. This is a...</p>
           </div>
         </div>
-        
-     
-        
-        <div className="w-[720px] h-[330px] rounded-[18.89px] bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0_rgba(0,0,0,0.4)] absolute top-[453px] left-[922px] overflow-visible">
+        <div className="w-[720px] h-[330px] rounded-[18.89px] bg-[#363C43] shadow-[5.67px_5.67px_3.78px_0_rgba(0,0,0,0.4)] relative top-[96px] left-[922px] overflow-visible md:left-[50px] lg:left-[300px] xl:left-[550px] 2xl:left-[822px]">
+          <div className=" w-[720px] rounded-[2.46px] flex justify-center items-center absolute left-[0px] bottom-[-30px]">
+        <img className="w-[500px]" src="/bottom_line.png" alt="Bottom line" />
+      </div>
+          <div className="z-10 w-6 absolute left-[12px] top-[20px]">             
+        <img className="w-6 object-contain" src="/side_bar.png" alt="Side bar" />
+      </div>
           <div className=" absolute left-[50px] top-[20px] w-[149px] h-[62px] rounded-[20px] bg-[#171717] flex justify-center items-center"><p className="font-[Poppins] text-[20px] font-medium p-[0] m-[0]">Gallery</p></div>
           <div onClick={handleButtonClick} className=" shadow-[-0.5px_-0.5px_6.9px_0_rgba(255,255,255,0.25),_9px_10px_7.1px_0_rgba(0,0,0,0.4),_inset_0px_0px_48.91px_0_rgba(0,0,0,0.05),_inset_0px_3.26px_3.26px_0_rgba(0,0,0,0.15)]  cursor-pointer absolute left-[381px] top-[28px] flex justify-center items-center w-[132px] h-[46px] rounded-[104px] bg-[#ffffff0d]">
             <img src="/add.png" alt="" />
@@ -114,5 +111,6 @@ const handleButtonClick = () => {
         </div>
        
     </div>
+    
   );
 }
